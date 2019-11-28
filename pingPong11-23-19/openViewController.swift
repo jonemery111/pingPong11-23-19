@@ -22,11 +22,9 @@ class openViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func gamePoint11Pressed(_ sender: UIButton) {
-    }
     
-    @IBAction func gamePoint21Pressed(_ sender: UIButton) {
-    }
+    
+   
     
     
     
