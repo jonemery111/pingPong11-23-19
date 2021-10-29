@@ -27,7 +27,7 @@ class CustomLabel: UILabel {
         
         
         translatesAutoresizingMaskIntoConstraints = false
-        layer.cornerRadius  = 22 //frame.size.height / 2 //was22
+        layer.cornerRadius  = 22 //frame.size.height / 2 
         layer.masksToBounds = false
         layer.borderWidth   = 0.1
         layer.borderColor   = UIColor.darkGray.cgColor

@@ -150,6 +150,9 @@
                                         <state key="normal" title="PLR:1">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="player1ButtonPressed:" destination="hmr-Dn-Ii9" eventType="touchUpInside" id="8Ga-5d-cyU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izt-5w-WlH" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="172" height="150"/>
@@ -158,6 +161,9 @@
                                         <state key="normal" title="PLR:2">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="player2ButtonPressed:" destination="hmr-Dn-Ii9" eventType="touchUpInside" id="YLo-xs-iCK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -165,39 +171,90 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-Nr-UMd" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
-                                <rect key="frame" x="230" y="433" width="164" height="60"/>
+                                <rect key="frame" x="230" y="483" width="164" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="d8H-Lh-aF0"/>
+                                    <constraint firstAttribute="height" constant="75" id="d8H-Lh-aF0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="hmr-Dn-Ii9" eventType="touchUpInside" id="U4t-En-1sm"/>
+                                    <action selector="winReset:" destination="hmr-Dn-Ii9" eventType="touchDownRepeat" id="bXt-sX-ufT"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="njj-lV-b2x" userLabel="WinStackView">
+                                <rect key="frame" x="50" y="390" width="314" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYt-w7-xJP">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="75"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kre-yJ-tfx">
+                                        <rect key="frame" x="207" y="0.0" width="107" height="75"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="obf-UK-wAt"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WinLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-Uk-Vvi">
+                                <rect key="frame" x="50" y="587" width="314" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="pC7-GG-0OH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VzU-TT-Ljm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="X9M-3O-omN" secondAttribute="bottom" id="8ZT-hm-2yg"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="8qy-q9-LlI" secondAttribute="trailing" constant="20" id="AHU-SC-l0j"/>
+                            <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="njj-lV-b2x" secondAttribute="trailing" constant="50" id="CB8-T5-f71"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="PUx-Nr-UMd" secondAttribute="trailing" constant="20" id="Ccx-R4-uHF"/>
                             <constraint firstAttribute="trailing" secondItem="X9M-3O-omN" secondAttribute="trailing" id="D7i-ls-7pn"/>
+                            <constraint firstItem="njj-lV-b2x" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="50" id="FHp-Zp-8Vc"/>
+                            <constraint firstItem="njj-lV-b2x" firstAttribute="top" secondItem="8qy-q9-LlI" secondAttribute="bottom" constant="32" id="GDv-q6-5sl"/>
+                            <constraint firstItem="SA6-Uk-Vvi" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="50" id="GN1-zd-GfJ"/>
                             <constraint firstItem="PUx-Nr-UMd" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="230" id="P9b-B0-1fO"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="PYt-wU-9c7" secondAttribute="trailing" constant="20" id="SRo-vE-mXm"/>
                             <constraint firstItem="PYt-wU-9c7" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="20" id="SYd-tv-o2M"/>
                             <constraint firstItem="317-cQ-btR" firstAttribute="top" secondItem="VzU-TT-Ljm" secondAttribute="top" constant="40" id="UzU-hn-tOQ"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="317-cQ-btR" secondAttribute="trailing" constant="20" id="V1b-tt-Voy"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="bottom" secondItem="PYt-wU-9c7" secondAttribute="bottom" constant="30" id="V63-fs-uhR"/>
-                            <constraint firstItem="PUx-Nr-UMd" firstAttribute="top" secondItem="8qy-q9-LlI" secondAttribute="bottom" constant="75" id="dqf-9z-DUv"/>
+                            <constraint firstItem="PUx-Nr-UMd" firstAttribute="top" secondItem="8qy-q9-LlI" secondAttribute="bottom" constant="125" id="dqf-9z-DUv"/>
                             <constraint firstItem="317-cQ-btR" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="20" id="eWU-71-uHb"/>
                             <constraint firstItem="8qy-q9-LlI" firstAttribute="top" secondItem="317-cQ-btR" secondAttribute="bottom" constant="30" id="ex2-qW-GSH"/>
                             <constraint firstItem="8qy-q9-LlI" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="20" id="lnU-he-nd4"/>
                             <constraint firstItem="X9M-3O-omN" firstAttribute="leading" secondItem="0rY-38-02V" secondAttribute="leading" id="oEw-TV-8mz"/>
                             <constraint firstItem="X9M-3O-omN" firstAttribute="top" secondItem="0rY-38-02V" secondAttribute="top" id="sqP-Ox-HFv"/>
+                            <constraint firstItem="PYt-wU-9c7" firstAttribute="top" secondItem="SA6-Uk-Vvi" secondAttribute="bottom" constant="20" id="yU9-J2-dPp"/>
+                            <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="SA6-Uk-Vvi" secondAttribute="trailing" constant="50" id="zyv-dq-285"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yW2-Wo-Qso"/>
+                    <connections>
+                        <outlet property="player1Button" destination="ACl-NH-jhg" id="W5t-8Y-86X"/>
+                        <outlet property="player1GamesWon" destination="IYt-w7-xJP" id="eZk-of-Sfm"/>
+                        <outlet property="player1Score" destination="fHk-si-qz0" id="ggk-jo-iIa"/>
+                        <outlet property="player2Button" destination="Izt-5w-WlH" id="tPt-EC-zcY"/>
+                        <outlet property="player2GamesWon" destination="kre-yJ-tfx" id="scl-bg-7z4"/>
+                        <outlet property="player2Score" destination="AxX-Ru-Ody" id="bkw-n3-lMp"/>
+                        <outlet property="resetButton" destination="PUx-Nr-UMd" id="wjp-Vy-sp6"/>
+                        <outlet property="winLabel" destination="SA6-Uk-Vvi" id="5GS-DQ-Ohi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4t-Ro-Np8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,6 +363,15 @@
                                     <constraint firstAttribute="height" constant="150" id="kZE-xY-eJD"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pke-to-v4L">
+                                <rect key="frame" x="50" y="587" width="314" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="GyH-Db-QFq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-9s-ffu" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                 <rect key="frame" x="225" y="478" width="169" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -318,17 +384,9 @@
                                 </state>
                                 <connections>
                                     <action selector="resetButtonPressed:" destination="vac-7k-Uha" eventType="touchUpInside" id="ttv-dJ-dZl"/>
+                                    <action selector="winReset:" destination="vac-7k-Uha" eventType="touchDownRepeat" id="Tg4-Eq-ISs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pke-to-v4L">
-                                <rect key="frame" x="50" y="612" width="314" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="GyH-Db-QFq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nYM-KV-m6g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

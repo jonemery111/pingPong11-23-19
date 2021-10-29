@@ -1,5 +1,5 @@
 //
-//  p21ViewController.swift
+//  11ViewController.swift
 //  pingPong11-23-19
 //
 //  Created by jon emery on 11/23/19.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-class p21ViewController: UIViewController {
+class P11ViewController: UIViewController {
+
     
     var player1 = 0
     var player2 = 0
-    let gamePoint = 21
+    let gamePoint = 11
     var player1Win = 0
     var player2Win = 0
     
-
     @IBOutlet weak var player1Score: CustomLabel!
     
     @IBOutlet weak var player2Score: CustomLabel!
@@ -31,22 +31,7 @@ class p21ViewController: UIViewController {
     
     @IBOutlet weak var player2GamesWon: UILabel!
     
-    
-    
-    
-    
-    
-    
-    
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-    
-
-    
+    @IBOutlet weak var resetButton: CustomResetButton!
     
     
     func restartGame() {
@@ -100,14 +85,16 @@ class p21ViewController: UIViewController {
             // Do any additional setup after loading the view.
               player1Score.layer.cornerRadius = 22
               player1Score.clipsToBounds = true
-
+    
               player2Score.layer.cornerRadius = 22
               player2Score.clipsToBounds = true
-
-
+    
+              resetButton.layer.cornerRadius = 22
+              resetButton.clipsToBounds = true
+    
             player1GamesWon.layer.cornerRadius = 22
             player1GamesWon.clipsToBounds = true
-
+    
             player2GamesWon.layer.cornerRadius = 22
             player2GamesWon.clipsToBounds = true
     
@@ -131,21 +118,12 @@ class p21ViewController: UIViewController {
         restartGame()
     }
     
-
     
     @IBAction func winReset(_ sender: CustomResetButton) {
         winReset()
     }
     
-    
-    
        
     
     
-    
-    }
-    
-    
-
-
-
+}
