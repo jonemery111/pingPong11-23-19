@@ -21,6 +21,7 @@ class openViewController: UIViewController {
        // gamePoint11.flash()
         //gamePoint21.flash()
         // Do any additional setup after loading the view.
+        print("Hello")
     }
     
     override func viewWillAppear(_ animated: Bool) {
