@@ -17,7 +17,7 @@ extension UIImageView {
         pulse.fromValue = 0.95
         pulse.toValue = 1.05
         pulse.autoreverses = true
-        pulse.repeatCount = 60.0
+        pulse.repeatCount = 4.0
         pulse.initialVelocity = 0.2
         pulse.damping = 1.0
         
@@ -46,7 +46,7 @@ func pulsate() {
     pulse.fromValue = 0.95
     pulse.toValue = 1.05
     pulse.autoreverses = true
-    pulse.repeatCount = 60.0
+    pulse.repeatCount = 1.15
     pulse.initialVelocity = 0.2
     pulse.damping = 1.0
     
@@ -59,7 +59,7 @@ func pulsate() {
         let flash = CABasicAnimation(keyPath: "opacity")
         flash.duration = 0.72
         flash.fromValue = 1.0
-        flash.toValue = 0.5
+        flash.toValue = 0.65
         flash.timingFunction = CAMediaTimingFunction (name: CAMediaTimingFunctionName.easeInEaseOut)
         flash.autoreverses = true
         flash.repeatCount = 100
