@@ -11,7 +11,6 @@
 		B27E05AD2390888F00AFCCC1 /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E05AC2390888F00AFCCC1 /* GamePlay.swift */; };
 		B2A6BBD4238952FD002A7D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBD3238952FD002A7D36 /* AppDelegate.swift */; };
 		B2A6BBD6238952FD002A7D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBD5238952FD002A7D36 /* SceneDelegate.swift */; };
-		B2A6BBD8238952FD002A7D36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBD7238952FD002A7D36 /* ViewController.swift */; };
 		B2A6BBDB238952FD002A7D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBD9238952FD002A7D36 /* Main.storyboard */; };
 		B2A6BBDD238952FE002A7D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBDC238952FE002A7D36 /* Assets.xcassets */; };
 		B2A6BBE0238952FE002A7D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBDE238952FE002A7D36 /* LaunchScreen.storyboard */; };
@@ -32,7 +31,6 @@
 		B2A6BBD0238952FD002A7D36 /* pingPong11-23-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pingPong11-23-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A6BBD3238952FD002A7D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2A6BBD5238952FD002A7D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2A6BBD7238952FD002A7D36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2A6BBDA238952FD002A7D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2A6BBDC238952FE002A7D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2A6BBDF238952FE002A7D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,12 +78,11 @@
 			children = (
 				B2A6BBD3238952FD002A7D36 /* AppDelegate.swift */,
 				B2A6BBD5238952FD002A7D36 /* SceneDelegate.swift */,
-				B2A6BBD7238952FD002A7D36 /* ViewController.swift */,
 				B2A6BBD9238952FD002A7D36 /* Main.storyboard */,
 				B2A6BBE723895349002A7D36 /* openViewController.swift */,
 				B2A6BBE923895370002A7D36 /* p11ViewController.swift */,
-				B27E05AC2390888F00AFCCC1 /* GamePlay.swift */,
 				B2A6BBEB238953AF002A7D36 /* 21ViewController.swift */,
+				B27E05AC2390888F00AFCCC1 /* GamePlay.swift */,
 				B2A6BBF3238FB229002A7D36 /* CustomButton.swift */,
 				B2A6BBF5238FB55E002A7D36 /* CustomResetButton.swift */,
 				B2A6BBF7238FB62C002A7D36 /* CustomLabel.swift */,
@@ -179,7 +176,6 @@
 				B2A6BBE823895349002A7D36 /* openViewController.swift in Sources */,
 				B27E05AB2390866F00AFCCC1 /* CustomGamePointButton.swift in Sources */,
 				B27E05AD2390888F00AFCCC1 /* GamePlay.swift in Sources */,
-				B2A6BBD8238952FD002A7D36 /* ViewController.swift in Sources */,
 				B2A6BBEA23895370002A7D36 /* p11ViewController.swift in Sources */,
 				B2A6BBF6238FB55E002A7D36 /* CustomResetButton.swift in Sources */,
 				B2A6BBF4238FB229002A7D36 /* CustomButton.swift in Sources */,

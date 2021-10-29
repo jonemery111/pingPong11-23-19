@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8h-Kp-iBI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8h-Kp-iBI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -223,26 +223,57 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JP6-TV-otq" userLabel="21ScoreStack">
-                                <rect key="frame" x="20" y="208" width="374" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="22w-E6-w1g">
+                                <rect key="frame" x="20" y="203" width="374" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P1: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jx-1t-rRR" customClass="CustomLabel" customModule="pingPong11_23_19" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="150"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JP6-TV-otq" userLabel="21ScoreStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P1: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jx-1t-rRR" customClass="CustomLabel" customModule="pingPong11_23_19" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="150"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaV-Op-ML0" customClass="CustomLabel" customModule="pingPong11_23_19" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="0.0" width="172" height="150"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="tpb-V7-4C9"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="b9r-Qp-nyv" userLabel="WinStack">
+                                <rect key="frame" x="50" y="385" width="314" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJa-yl-E4r">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="75"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="jmw-Lg-0l9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaV-Op-ML0" customClass="CustomLabel" customModule="pingPong11_23_19" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="172" height="150"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-31-VhR">
+                                        <rect key="frame" x="207" y="0.0" width="107" height="75"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="tpb-V7-4C9"/>
+                                    <constraint firstAttribute="height" constant="75" id="kzl-0m-A4X"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="l11-Iu-tLa"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="71q-BY-yCM" userLabel="21ButtonStack">
@@ -255,6 +286,9 @@
                                         <state key="normal" title="PLR:1">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="player1ButtonPressed:" destination="vac-7k-Uha" eventType="touchUpInside" id="PjH-xV-a1A"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-ym-mr0" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="172" height="150"/>
@@ -263,6 +297,9 @@
                                         <state key="normal" title="PLR:2">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="player2ButtonPressed:" destination="vac-7k-Uha" eventType="touchUpInside" id="G7B-8f-0ce"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -270,7 +307,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-9s-ffu" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
-                                <rect key="frame" x="230" y="418" width="164" height="75"/>
+                                <rect key="frame" x="225" y="478" width="169" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="FJg-Fs-l0e"/>
@@ -279,30 +316,57 @@
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="vac-7k-Uha" eventType="touchUpInside" id="ttv-dJ-dZl"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIN LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pke-to-v4L">
+                                <rect key="frame" x="50" y="612" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GyH-Db-QFq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nYM-KV-m6g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xYk-DP-RkW" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="20" id="2NU-Rj-NhY"/>
-                            <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="JP6-TV-otq" secondAttribute="trailing" constant="20" id="8fs-zH-5UO"/>
-                            <constraint firstItem="WQi-9s-ffu" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="230" id="AQa-98-qoh"/>
+                            <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="b9r-Qp-nyv" secondAttribute="trailing" constant="50" id="43U-5g-XIo"/>
+                            <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="pke-to-v4L" secondAttribute="trailing" constant="50" id="4ZL-Ed-4gU"/>
+                            <constraint firstItem="WQi-9s-ffu" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="225" id="AQa-98-qoh"/>
                             <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="WQi-9s-ffu" secondAttribute="trailing" constant="20" id="J5i-2o-hyz"/>
                             <constraint firstAttribute="bottom" secondItem="lZT-vE-PGf" secondAttribute="bottom" id="Khl-2l-dvM"/>
                             <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="71q-BY-yCM" secondAttribute="trailing" constant="20" id="L4e-C9-izw"/>
+                            <constraint firstItem="22w-E6-w1g" firstAttribute="top" secondItem="xYk-DP-RkW" secondAttribute="bottom" constant="25" id="Nwk-FD-f2E"/>
+                            <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="22w-E6-w1g" secondAttribute="trailing" constant="20" id="OYX-7P-mtH"/>
+                            <constraint firstItem="22w-E6-w1g" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="20" id="SJ8-ef-WFW"/>
                             <constraint firstItem="71q-BY-yCM" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="20" id="Sa1-4R-0aj"/>
                             <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="xYk-DP-RkW" secondAttribute="trailing" constant="20" id="Smb-Ur-ccT"/>
                             <constraint firstItem="lZT-vE-PGf" firstAttribute="leading" secondItem="qVb-T8-gBU" secondAttribute="leading" id="cLY-jo-3TQ"/>
-                            <constraint firstItem="JP6-TV-otq" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="20" id="g6g-dv-LZS"/>
                             <constraint firstAttribute="trailing" secondItem="lZT-vE-PGf" secondAttribute="trailing" id="gZ5-UX-EBg"/>
+                            <constraint firstItem="b9r-Qp-nyv" firstAttribute="top" secondItem="22w-E6-w1g" secondAttribute="bottom" constant="32" id="h61-oL-7kZ"/>
                             <constraint firstItem="nYM-KV-m6g" firstAttribute="bottom" secondItem="71q-BY-yCM" secondAttribute="bottom" constant="30" id="kqm-ec-NBN"/>
-                            <constraint firstItem="JP6-TV-otq" firstAttribute="top" secondItem="xYk-DP-RkW" secondAttribute="bottom" constant="30" id="oLk-y2-7hS"/>
+                            <constraint firstItem="71q-BY-yCM" firstAttribute="top" secondItem="pke-to-v4L" secondAttribute="bottom" constant="20" id="lad-qI-wp0"/>
                             <constraint firstItem="lZT-vE-PGf" firstAttribute="top" secondItem="qVb-T8-gBU" secondAttribute="top" id="ptg-5q-Hye"/>
+                            <constraint firstItem="pke-to-v4L" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="50" id="qOQ-N2-U3Q"/>
+                            <constraint firstItem="WQi-9s-ffu" firstAttribute="top" secondItem="22w-E6-w1g" secondAttribute="bottom" constant="125" id="rjB-6W-WcP"/>
                             <constraint firstItem="xYk-DP-RkW" firstAttribute="top" secondItem="nYM-KV-m6g" secondAttribute="top" constant="40" id="wZC-nC-U9n"/>
-                            <constraint firstItem="WQi-9s-ffu" firstAttribute="top" secondItem="JP6-TV-otq" secondAttribute="bottom" constant="60" id="xqa-qX-GRf"/>
+                            <constraint firstItem="b9r-Qp-nyv" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="50" id="x5c-FD-vVv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kbr-93-OaG"/>
+                    <connections>
+                        <outlet property="player1Button" destination="EZI-hW-oPE" id="nML-69-aQc"/>
+                        <outlet property="player1GamesWon" destination="OJa-yl-E4r" id="lcj-B7-nnP"/>
+                        <outlet property="player1Score" destination="8Jx-1t-rRR" id="ihk-e7-EVs"/>
+                        <outlet property="player2Button" destination="8jy-ym-mr0" id="sSZ-c7-grr"/>
+                        <outlet property="player2GamesWon" destination="hC6-31-VhR" id="OIj-gV-bBI"/>
+                        <outlet property="player2Score" destination="oaV-Op-ML0" id="XxP-Xz-q5F"/>
+                        <outlet property="winLabel" destination="pke-to-v4L" id="Bg8-Xd-MDW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0m-mD-W0z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
