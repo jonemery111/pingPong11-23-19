@@ -135,11 +135,7 @@ class p21ViewController: UIViewController {
     
     @IBAction func winReset(_ sender: CustomResetButton) {
         winReset()
-    }
-    
-    
-    
-       
+        }
     
     
     

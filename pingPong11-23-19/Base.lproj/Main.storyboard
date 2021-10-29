@@ -207,8 +207,8 @@
                                     <constraint firstAttribute="height" constant="75" id="obf-UK-wAt"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WinLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-Uk-Vvi">
-                                <rect key="frame" x="50" y="587" width="314" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-Uk-Vvi">
+                                <rect key="frame" x="50" y="602" width="314" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="pC7-GG-0OH"/>
                                 </constraints>
@@ -240,7 +240,7 @@
                             <constraint firstItem="8qy-q9-LlI" firstAttribute="leading" secondItem="VzU-TT-Ljm" secondAttribute="leading" constant="20" id="lnU-he-nd4"/>
                             <constraint firstItem="X9M-3O-omN" firstAttribute="leading" secondItem="0rY-38-02V" secondAttribute="leading" id="oEw-TV-8mz"/>
                             <constraint firstItem="X9M-3O-omN" firstAttribute="top" secondItem="0rY-38-02V" secondAttribute="top" id="sqP-Ox-HFv"/>
-                            <constraint firstItem="PYt-wU-9c7" firstAttribute="top" secondItem="SA6-Uk-Vvi" secondAttribute="bottom" constant="20" id="yU9-J2-dPp"/>
+                            <constraint firstItem="PYt-wU-9c7" firstAttribute="top" secondItem="SA6-Uk-Vvi" secondAttribute="bottom" constant="5" id="yU9-J2-dPp"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="SA6-Uk-Vvi" secondAttribute="trailing" constant="50" id="zyv-dq-285"/>
                         </constraints>
                     </view>
@@ -364,7 +364,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pke-to-v4L">
-                                <rect key="frame" x="50" y="587" width="314" height="75"/>
+                                <rect key="frame" x="50" y="602" width="314" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="GyH-Db-QFq"/>
                                 </constraints>
@@ -407,7 +407,7 @@
                             <constraint firstAttribute="trailing" secondItem="lZT-vE-PGf" secondAttribute="trailing" id="gZ5-UX-EBg"/>
                             <constraint firstItem="b9r-Qp-nyv" firstAttribute="top" secondItem="22w-E6-w1g" secondAttribute="bottom" constant="32" id="h61-oL-7kZ"/>
                             <constraint firstItem="nYM-KV-m6g" firstAttribute="bottom" secondItem="71q-BY-yCM" secondAttribute="bottom" constant="30" id="kqm-ec-NBN"/>
-                            <constraint firstItem="71q-BY-yCM" firstAttribute="top" secondItem="pke-to-v4L" secondAttribute="bottom" constant="20" id="lad-qI-wp0"/>
+                            <constraint firstItem="71q-BY-yCM" firstAttribute="top" secondItem="pke-to-v4L" secondAttribute="bottom" constant="5" id="lad-qI-wp0"/>
                             <constraint firstItem="lZT-vE-PGf" firstAttribute="top" secondItem="qVb-T8-gBU" secondAttribute="top" id="ptg-5q-Hye"/>
                             <constraint firstItem="pke-to-v4L" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="50" id="qOQ-N2-U3Q"/>
                             <constraint firstItem="WQi-9s-ffu" firstAttribute="top" secondItem="22w-E6-w1g" secondAttribute="bottom" constant="125" id="rjB-6W-WcP"/>
