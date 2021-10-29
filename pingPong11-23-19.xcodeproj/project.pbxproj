@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B27E05AB2390866F00AFCCC1 /* CustomGamePointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E05AA2390866F00AFCCC1 /* CustomGamePointButton.swift */; };
+		B27E05AD2390888F00AFCCC1 /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E05AC2390888F00AFCCC1 /* GamePlay.swift */; };
 		B2A6BBD4238952FD002A7D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBD3238952FD002A7D36 /* AppDelegate.swift */; };
 		B2A6BBD6238952FD002A7D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBD5238952FD002A7D36 /* SceneDelegate.swift */; };
 		B2A6BBD8238952FD002A7D36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBD7238952FD002A7D36 /* ViewController.swift */; };
@@ -14,7 +16,7 @@
 		B2A6BBDD238952FE002A7D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBDC238952FE002A7D36 /* Assets.xcassets */; };
 		B2A6BBE0238952FE002A7D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBDE238952FE002A7D36 /* LaunchScreen.storyboard */; };
 		B2A6BBE823895349002A7D36 /* openViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBE723895349002A7D36 /* openViewController.swift */; };
-		B2A6BBEA23895370002A7D36 /* 11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBE923895370002A7D36 /* 11ViewController.swift */; };
+		B2A6BBEA23895370002A7D36 /* p11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBE923895370002A7D36 /* p11ViewController.swift */; };
 		B2A6BBEC238953AF002A7D36 /* 21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6BBEB238953AF002A7D36 /* 21ViewController.swift */; };
 		B2A6BBEE23895686002A7D36 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBED23895686002A7D36 /* Contents.json */; };
 		B2A6BBF023895721002A7D36 /* firstRoundPingPong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2A6BBEF23895721002A7D36 /* firstRoundPingPong.jpg */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B27E05AA2390866F00AFCCC1 /* CustomGamePointButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGamePointButton.swift; sourceTree = "<group>"; };
+		B27E05AC2390888F00AFCCC1 /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 		B2A6BBD0238952FD002A7D36 /* pingPong11-23-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pingPong11-23-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A6BBD3238952FD002A7D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2A6BBD5238952FD002A7D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +38,10 @@
 		B2A6BBDF238952FE002A7D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2A6BBE1238952FE002A7D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2A6BBE723895349002A7D36 /* openViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openViewController.swift; sourceTree = "<group>"; };
-		B2A6BBE923895370002A7D36 /* 11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11ViewController.swift; sourceTree = "<group>"; };
+		B2A6BBE923895370002A7D36 /* p11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p11ViewController.swift; sourceTree = "<group>"; };
 		B2A6BBEB238953AF002A7D36 /* 21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21ViewController.swift; sourceTree = "<group>"; };
 		B2A6BBED23895686002A7D36 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = "../../pingPong10-6-19/pingPong10-6-19/Assets.xcassets/Contents.json"; sourceTree = "<group>"; };
-		B2A6BBEF23895721002A7D36 /* firstRoundPingPong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = firstRoundPingPong.jpg; path = ../../firstRoundPingPong.jpg; sourceTree = "<group>"; };
+		B2A6BBEF23895721002A7D36 /* firstRoundPingPong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstRoundPingPong.jpg; sourceTree = "<group>"; };
 		B2A6BBF3238FB229002A7D36 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B2A6BBF5238FB55E002A7D36 /* CustomResetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResetButton.swift; sourceTree = "<group>"; };
 		B2A6BBF7238FB62C002A7D36 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
@@ -79,12 +83,14 @@
 				B2A6BBD7238952FD002A7D36 /* ViewController.swift */,
 				B2A6BBD9238952FD002A7D36 /* Main.storyboard */,
 				B2A6BBE723895349002A7D36 /* openViewController.swift */,
-				B2A6BBE923895370002A7D36 /* 11ViewController.swift */,
+				B2A6BBE923895370002A7D36 /* p11ViewController.swift */,
+				B27E05AC2390888F00AFCCC1 /* GamePlay.swift */,
 				B2A6BBEB238953AF002A7D36 /* 21ViewController.swift */,
 				B2A6BBF3238FB229002A7D36 /* CustomButton.swift */,
 				B2A6BBF5238FB55E002A7D36 /* CustomResetButton.swift */,
 				B2A6BBF7238FB62C002A7D36 /* CustomLabel.swift */,
 				B2A6BBF9238FB8B9002A7D36 /* pulsate.swift */,
+				B27E05AA2390866F00AFCCC1 /* CustomGamePointButton.swift */,
 				B2A6BBDC238952FE002A7D36 /* Assets.xcassets */,
 				B2A6BBEF23895721002A7D36 /* firstRoundPingPong.jpg */,
 				B2A6BBED23895686002A7D36 /* Contents.json */,
@@ -171,8 +177,10 @@
 				B2A6BBF8238FB62C002A7D36 /* CustomLabel.swift in Sources */,
 				B2A6BBFA238FB8B9002A7D36 /* pulsate.swift in Sources */,
 				B2A6BBE823895349002A7D36 /* openViewController.swift in Sources */,
+				B27E05AB2390866F00AFCCC1 /* CustomGamePointButton.swift in Sources */,
+				B27E05AD2390888F00AFCCC1 /* GamePlay.swift in Sources */,
 				B2A6BBD8238952FD002A7D36 /* ViewController.swift in Sources */,
-				B2A6BBEA23895370002A7D36 /* 11ViewController.swift in Sources */,
+				B2A6BBEA23895370002A7D36 /* p11ViewController.swift in Sources */,
 				B2A6BBF6238FB55E002A7D36 /* CustomResetButton.swift in Sources */,
 				B2A6BBF4238FB229002A7D36 /* CustomButton.swift in Sources */,
 				B2A6BBD4238952FD002A7D36 /* AppDelegate.swift in Sources */,

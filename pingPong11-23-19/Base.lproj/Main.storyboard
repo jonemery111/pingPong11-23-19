@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8h-Kp-iBI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8h-Kp-iBI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +19,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstRoundPingPong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hOE-Tr-UQe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PING:PONG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Q2-yT-sYb">
                                 <rect key="frame" x="20" y="128" width="374" height="50"/>
@@ -25,29 +27,29 @@
                                     <constraint firstAttribute="height" constant="50" id="jOb-h3-pt8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Bgc-cJ-vlX" userLabel=" gamePointStack">
                                 <rect key="frame" x="20" y="682" width="374" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqR-3K-6AH" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqR-3K-6AH" customClass="CustomGamePointButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="150"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="11">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                         <connections>
                                             <segue destination="hmr-Dn-Ii9" kind="show" id="kLV-ZJ-LB4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg4-3v-sjV" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg4-3v-sjV" customClass="CustomGamePointButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="172" height="150"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="21">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                         <connections>
                                             <segue destination="vac-7k-Uha" kind="show" id="x51-cV-xpO"/>
@@ -64,11 +66,12 @@
                                     <constraint firstAttribute="height" constant="50" id="iEe-jn-mYc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bgc-cJ-vlX" secondAttribute="trailing" constant="20" id="37S-7K-6SR"/>
                             <constraint firstItem="9Q2-yT-sYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AWg-R4-RA3"/>
@@ -84,7 +87,6 @@
                             <constraint firstItem="hOE-Tr-UQe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kGg-jP-sPb"/>
                             <constraint firstItem="hOE-Tr-UQe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tDC-Fm-xEU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bfe-yD-dwD"/>
                     <connections>
@@ -99,7 +101,7 @@
         <!--View Controller-->
         <scene sceneID="ueY-4v-14d">
             <objects>
-                <viewController id="hmr-Dn-Ii9" customClass="p11ViewController" customModule="pingPong11_23_19" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hmr-Dn-Ii9" customClass="P11ViewController" customModule="pingPong11_23_19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0rY-38-02V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +115,7 @@
                                     <constraint firstAttribute="height" constant="50" id="TaI-4l-U8s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-q9-LlI" userLabel="11ScoreStack">
@@ -141,20 +143,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PYt-wU-9c7" userLabel="11ButtonStack">
                                 <rect key="frame" x="20" y="682" width="374" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACl-NH-jhg" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACl-NH-jhg" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="150"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="PLR:1">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izt-5w-WlH" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izt-5w-WlH" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="172" height="150"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="PLR:2">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -162,7 +164,7 @@
                                     <constraint firstAttribute="height" constant="150" id="pVd-Br-yxf"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-Nr-UMd" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-Nr-UMd" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                 <rect key="frame" x="230" y="433" width="164" height="60"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -174,7 +176,8 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VzU-TT-Ljm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="X9M-3O-omN" secondAttribute="bottom" id="8ZT-hm-2yg"/>
                             <constraint firstItem="VzU-TT-Ljm" firstAttribute="trailing" secondItem="8qy-q9-LlI" secondAttribute="trailing" constant="20" id="AHU-SC-l0j"/>
@@ -193,7 +196,6 @@
                             <constraint firstItem="X9M-3O-omN" firstAttribute="leading" secondItem="0rY-38-02V" secondAttribute="leading" id="oEw-TV-8mz"/>
                             <constraint firstItem="X9M-3O-omN" firstAttribute="top" secondItem="0rY-38-02V" secondAttribute="top" id="sqP-Ox-HFv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="VzU-TT-Ljm"/>
                     </view>
                     <navigationItem key="navigationItem" id="yW2-Wo-Qso"/>
                 </viewController>
@@ -218,7 +220,7 @@
                                     <constraint firstAttribute="height" constant="50" id="XXo-MU-OkU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JP6-TV-otq" userLabel="21ScoreStack">
@@ -246,20 +248,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="71q-BY-yCM" userLabel="21ButtonStack">
                                 <rect key="frame" x="20" y="682" width="374" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZI-hW-oPE" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZI-hW-oPE" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="150"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="PLR:1">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-ym-mr0" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-ym-mr0" customClass="CustomButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="172" height="150"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="PLR:2">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -267,7 +269,7 @@
                                     <constraint firstAttribute="height" constant="150" id="kZE-xY-eJD"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-9s-ffu" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-9s-ffu" customClass="CustomResetButton" customModule="pingPong11_23_19" customModuleProvider="target">
                                 <rect key="frame" x="230" y="418" width="164" height="75"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -279,7 +281,8 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nYM-KV-m6g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xYk-DP-RkW" firstAttribute="leading" secondItem="nYM-KV-m6g" secondAttribute="leading" constant="20" id="2NU-Rj-NhY"/>
                             <constraint firstItem="nYM-KV-m6g" firstAttribute="trailing" secondItem="JP6-TV-otq" secondAttribute="trailing" constant="20" id="8fs-zH-5UO"/>
@@ -298,7 +301,6 @@
                             <constraint firstItem="xYk-DP-RkW" firstAttribute="top" secondItem="nYM-KV-m6g" secondAttribute="top" constant="40" id="wZC-nC-U9n"/>
                             <constraint firstItem="WQi-9s-ffu" firstAttribute="top" secondItem="JP6-TV-otq" secondAttribute="bottom" constant="60" id="xqa-qX-GRf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nYM-KV-m6g"/>
                     </view>
                     <navigationItem key="navigationItem" id="kbr-93-OaG"/>
                 </viewController>
@@ -331,5 +333,14 @@
     </scenes>
     <resources>
         <image name="firstRoundPingPong.jpg" width="3024" height="4032"/>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

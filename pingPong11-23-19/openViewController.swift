@@ -15,14 +15,20 @@ class openViewController: UIViewController {
     @IBOutlet weak var gamePoint21: UIButton!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       // gamePoint11.flash()
+        //gamePoint21.flash()
         // Do any additional setup after loading the view.
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        gamePoint11.flash()
+        gamePoint21.flash()
+        
+    }
     
    
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class p11ViewController: UIViewController {
+class P11ViewController: UIViewController {
 
     
     

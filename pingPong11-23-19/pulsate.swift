@@ -38,3 +38,31 @@ extension UIImageView {
     
     
 }
+extension UIButton {
+
+func pulsate() {
+    let pulse = CASpringAnimation(keyPath: "transform.scale")
+    pulse.duration = 0.5
+    pulse.fromValue = 0.95
+    pulse.toValue = 1.05
+    pulse.autoreverses = true
+    pulse.repeatCount = 60.0
+    pulse.initialVelocity = 0.2
+    pulse.damping = 1.0
+    
+    layer.add(pulse, forKey: nil)
+    }
+    
+    
+    func  flash() {
+        
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.72
+        flash.fromValue = 1.0
+        flash.toValue = 0.5
+        flash.timingFunction = CAMediaTimingFunction (name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 100
+        layer.add(flash, forKey: nil)
+    }
+}
