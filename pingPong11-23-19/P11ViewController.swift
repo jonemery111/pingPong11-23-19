@@ -59,8 +59,7 @@ class P11ViewController: UIViewController {
                 winLabel.isHidden = false
                 player1Win += 1
                 player1GamesWon.text = "\(player1Win)"
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.success)
+                winNotification()
     
             }else if player2 >= gamePoint && player2 >= player1 + 2 {
                 print("player 2 Wins")
@@ -69,8 +68,7 @@ class P11ViewController: UIViewController {
                 winLabel.isHidden = false
                 player2Win += 1
                 player2GamesWon.text = "\(player2Win)"
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.success)
+                winNotification()
             }
     
     
@@ -83,7 +81,10 @@ class P11ViewController: UIViewController {
             player2GamesWon.text = "0"
     
         }
-    
+    func winNotification() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
     
         override func viewDidLoad() {
             super.viewDidLoad()
