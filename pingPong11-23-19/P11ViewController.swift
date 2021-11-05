@@ -10,6 +10,7 @@ import UIKit
 
 class P11ViewController: UIViewController {
 
+
     
     var player1 = 0
     var player2 = 0
@@ -34,6 +35,7 @@ class P11ViewController: UIViewController {
     @IBOutlet weak var resetButton: CustomResetButton!
     
     
+    
     func restartGame() {
             player1 = 0
             player2 = 0
@@ -45,6 +47,30 @@ class P11ViewController: UIViewController {
     
     
         }
+    
+    func playValue() -> Bool {
+        let totalScore = (player1 + player2)
+        if totalScore % 5 == 0 {
+            print("change service")
+            return true
+        }else {
+            return false
+        }
+    }
+    
+    func changeLabelShadow(highlighed: Bool) {
+        if highlighed {
+            self.player1Score.setHighlightedLabel()
+            self.player2Score.setUnHighlightedLabel()
+        }else{
+            self.player1Score.setUnHighlightedLabel()
+            self.player2Score.setHighlightedLabel()
+            
+        }
+        
+    }
+    
+    
         func scoreButtonHidden() {
             player1Button.isHidden = true
             player2Button.isHidden = true
@@ -86,12 +112,18 @@ class P11ViewController: UIViewController {
         generator.notificationOccurred(.success)
     }
     
+    let customlabel = CustomLabel()
+    
+    
+    
+    
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-              player1Score.layer.cornerRadius = 22
-              player1Score.clipsToBounds = true
-    
+//              player1Score.layer.cornerRadius = 22
+//              player1Score.clipsToBounds = true
+        
               player2Score.layer.cornerRadius = 22
               player2Score.clipsToBounds = true
     
@@ -103,14 +135,21 @@ class P11ViewController: UIViewController {
     
             player2GamesWon.layer.cornerRadius = 22
             player2GamesWon.clipsToBounds = true
-    
+            
+            
         }
+    
+  
+    
+    
     
     @IBAction func player1ButtonPressed(_ sender: CustomButton) {
         player1Button.pulsate()
         player1 += 1
         player1Score.text = "P1: \(player1)"
         playerWin()
+        changeLabelShadow(highlighed: playValue())
+        
     }
     
     @IBAction func player2ButtonPressed(_ sender: CustomButton) {
@@ -118,6 +157,7 @@ class P11ViewController: UIViewController {
         player2 += 1
         player2Score.text = "P2: \(player2)"
         playerWin()
+        changeLabelShadow(highlighed: playValue())
     }
     
     @IBAction func resetButtonPressed(_ sender: CustomResetButton) {
