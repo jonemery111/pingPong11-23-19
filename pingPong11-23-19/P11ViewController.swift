@@ -58,8 +58,8 @@ class P11ViewController: UIViewController {
         }
     }
     
-    func changeLabelShadow(highlighed: Bool) {
-        if highlighed {
+    func changeLabelShadow(highlighted: Bool) {
+        if highlighted {
             self.player1Score.setHighlightedLabel()
             self.player2Score.setUnHighlightedLabel()
         }else{
@@ -121,18 +121,18 @@ class P11ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-//              player1Score.layer.cornerRadius = 22
-//              player1Score.clipsToBounds = true
-        
-              player2Score.layer.cornerRadius = 22
-              player2Score.clipsToBounds = true
-    
-              resetButton.layer.cornerRadius = 22
-              resetButton.clipsToBounds = true
-    
+            player1Score.layer.cornerRadius = 22
+            player1Score.clipsToBounds = true
+            
+            player2Score.layer.cornerRadius = 22
+            player2Score.clipsToBounds = true
+            
+            resetButton.layer.cornerRadius = 22
+            resetButton.clipsToBounds = true
+            
             player1GamesWon.layer.cornerRadius = 22
             player1GamesWon.clipsToBounds = true
-    
+            
             player2GamesWon.layer.cornerRadius = 22
             player2GamesWon.clipsToBounds = true
             
@@ -148,7 +148,7 @@ class P11ViewController: UIViewController {
         player1 += 1
         player1Score.text = "P1: \(player1)"
         playerWin()
-        changeLabelShadow(highlighed: playValue())
+        changeLabelShadow(highlighted: playValue())
         
     }
     
@@ -157,7 +157,7 @@ class P11ViewController: UIViewController {
         player2 += 1
         player2Score.text = "P2: \(player2)"
         playerWin()
-        changeLabelShadow(highlighed: playValue())
+        changeLabelShadow(highlighted: playValue())
     }
     
     @IBAction func resetButtonPressed(_ sender: CustomResetButton) {

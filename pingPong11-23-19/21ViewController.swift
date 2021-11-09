@@ -105,19 +105,19 @@ class p21ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-              player1Score.layer.cornerRadius = 22
-              player1Score.clipsToBounds = true
-
-              player2Score.layer.cornerRadius = 22
-              player2Score.clipsToBounds = true
-
-
-            player1GamesWon.layer.cornerRadius = 22
-            player1GamesWon.clipsToBounds = true
-
-            player2GamesWon.layer.cornerRadius = 22
-            player2GamesWon.clipsToBounds = true
-    
+//            player1Score.layer.cornerRadius = 22
+//            player1Score.clipsToBounds = true
+//            
+//            player2Score.layer.cornerRadius = 22
+//            player2Score.clipsToBounds = true
+//            
+//            
+//            player1GamesWon.layer.cornerRadius = 22
+//            player1GamesWon.clipsToBounds = true
+//            
+//            player2GamesWon.layer.cornerRadius = 22
+//            player2GamesWon.clipsToBounds = true
+            
         }
     
     @IBAction func player1ButtonPressed(_ sender: CustomButton) {

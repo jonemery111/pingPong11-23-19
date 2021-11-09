@@ -11,20 +11,20 @@ import UIKit
 
 
 class CustomButton: UIButton {
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setButton()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setButton()
     }
-    
+
     func setButton() {
         setShadow()
-        
+
         setTitleColor(.red, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel?.font    = UIFont(name: "DINCondensed-Bold", size: 75)
@@ -33,9 +33,9 @@ class CustomButton: UIButton {
         layer.borderWidth   = 0.1
         layer.borderColor   = UIColor.darkGray.cgColor
         backgroundColor     = .lightGray
-        
+
     }
-    
+
     private func setShadow() {
         layer.shadowColor   = UIColor.black.cgColor
         layer.shadowOffset  = CGSize(width: 0.0, height: 6.0)
