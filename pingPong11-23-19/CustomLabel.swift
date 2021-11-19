@@ -40,7 +40,7 @@ class CustomLabel: UILabel {
         self.layer.cornerRadius = 22 //self.bounds.width/2
         self.clipsToBounds = true
         self.textColor = UIColor.white
-        self.setProperties(borderWidth: 1.0, borderColor:UIColor.black)
+        self.setProperties(borderWidth: 10.0, borderColor:UIColor.systemGreen)
     }
         func setUnHighlightedLabel() {
     

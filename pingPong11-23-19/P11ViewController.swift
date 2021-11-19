@@ -17,6 +17,8 @@ class P11ViewController: UIViewController {
     let gamePoint = 11
     var player1Win = 0
     var player2Win = 0
+    //var scoreSum = 0
+    var playerServe = 1
     
     @IBOutlet weak var player1Score: CustomLabel!
     
@@ -48,27 +50,71 @@ class P11ViewController: UIViewController {
     
         }
     
-    func playValue() -> Bool {
+    
+    
+    func scoreSum() {
         let totalScore = (player1 + player2)
-        if totalScore % 5 == 0 {
-            print("change service")
-            return true
-        }else {
-            return false
+        if totalScore % 5 == 0  && playerServe == 1 {
+            self.player1Score.setHighlightedLabel()
+            self.player2Score.setUnHighlightedLabel()
+            playerServe = 2
+        }else if totalScore % 5 == 0 && playerServe == 2 {
+            self.player2Score.setHighlightedLabel()
+            self.player1Score.setUnHighlightedLabel()
+            playerServe = 1
         }
     }
     
-    func changeLabelShadow(highlighted: Bool) {
-        if highlighted {
+    func playerServiceChange() {
+        if player1 < (gamePoint - 1) && player2 < (gamePoint - 1) {
+            scoreSum()
+        } else if player1 >= (gamePoint - 1) && player1 > player2 {
+            self.player2Score.setHighlightedLabel()
+            self.player1Score.setUnHighlightedLabel()
+            playerServe = 1
+        }else if player2 >= (gamePoint - 1) && player2 > player1 {
             self.player1Score.setHighlightedLabel()
             self.player2Score.setUnHighlightedLabel()
-        }else{
-            self.player1Score.setUnHighlightedLabel()
-            self.player2Score.setHighlightedLabel()
-            
+            playerServe = 2
         }
-        
     }
+    
+    func playerChange() {
+        if playerServe == 1 {
+            playerServe = 2
+        }else{
+            playerServe = 1
+        }
+    }
+    
+    
+//    func playValue() -> Bool {
+//        let totalScore = (player1 + player2)
+//        if totalScore % 5 == 0 {
+//            print("change service")
+//            return true
+//        }else {
+//            return false
+//        }
+//    }
+    
+   
+    
+    
+    
+    
+    
+//    func changeLabelShadow(highlighted: Bool) {
+//        if highlighted {
+//            self.player1Score.setHighlightedLabel()
+//            self.player2Score.setUnHighlightedLabel()
+//        }else{
+//            self.player1Score.setUnHighlightedLabel()
+//            self.player2Score.setHighlightedLabel()
+//
+//        }
+//
+//    }
     
     
         func scoreButtonHidden() {
@@ -112,43 +158,29 @@ class P11ViewController: UIViewController {
         generator.notificationOccurred(.success)
     }
     
-    let customlabel = CustomLabel()
     
     
     
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
     
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            player1Score.layer.cornerRadius = 22
-            player1Score.clipsToBounds = true
-            
-            player2Score.layer.cornerRadius = 22
-            player2Score.clipsToBounds = true
-            
-            resetButton.layer.cornerRadius = 22
-            resetButton.clipsToBounds = true
-            
-            player1GamesWon.layer.cornerRadius = 22
-            player1GamesWon.clipsToBounds = true
-            
-            player2GamesWon.layer.cornerRadius = 22
-            player2GamesWon.clipsToBounds = true
+            scoreSum()
             
             
         }
     
-  
-    
-    
+   
     
     @IBAction func player1ButtonPressed(_ sender: CustomButton) {
         player1Button.pulsate()
         player1 += 1
         player1Score.text = "P1: \(player1)"
         playerWin()
-        changeLabelShadow(highlighted: playValue())
+        playerServiceChange()
+//        changeLabelShadow(highlighted: playValue())
         
     }
     
@@ -157,16 +189,20 @@ class P11ViewController: UIViewController {
         player2 += 1
         player2Score.text = "P2: \(player2)"
         playerWin()
-        changeLabelShadow(highlighted: playValue())
+        playerServiceChange()
+//        changeLabelShadow(highlighted: playValue())
     }
     
     @IBAction func resetButtonPressed(_ sender: CustomResetButton) {
         restartGame()
+        scoreSum()
     }
     
     
     @IBAction func winReset(_ sender: CustomResetButton) {
         winReset()
+        playerChange()
+    
     }
     
        
